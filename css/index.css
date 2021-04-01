@@ -1,0 +1,367 @@
+main {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+}
+
+.sec1 {
+    width: 100%;
+    height: 944px;
+    background-color: #c8c8c8;
+    position: relative;
+    padding-top: 150px;
+    box-sizing:border-box;
+}
+
+.sec1 > article > .arrow {
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+          transform: translateY(-50%);
+
+}
+
+.sec1 > article > .arrow > div {
+    width: 30px;
+    height: 48px;
+    background-color: dimgrey;
+
+}
+.sec1>article>.title{
+    margin: auto;
+    width: 774px;
+    height: 125px;
+    background-color: #717171;
+    position: relative;
+}
+.sec1>article>.stitle{
+    margin: auto;
+    width: 662px;
+    height: 35px;
+    margin-top: 40px;
+    background-color: #717171;
+    position: relative;
+}
+.sec2 {
+    margin-top: 300px;
+    text-align: center;
+    position: relative;
+
+}
+
+.sec2 .title {
+    width: 300px;
+    height: 80px;
+    background-color: #c8c8c8;
+    margin: auto;
+}
+
+.sec2 .eventimg {
+    width: 1440px;
+    height: 662px;
+    background-color: #c8c8c8;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.sec2 > article > .arrow {
+    width: 1920px;
+    padding: 0 180px;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 540px;
+
+}
+
+.sec2 > article > .arrow > div {
+    width: 30px;
+    height: 48px;
+    background-color: dimgrey;
+
+}
+
+.sec2 .circlebar {
+    width: 146px;
+    height: 10px;
+    background-color: #c8c8c8;
+    margin: auto;
+    margin-top: 50px;
+}
+.sec3 {
+    margin-top: 300px;
+    width: 1920px;
+    text-align: center;
+    position: relative;
+}
+.sec3 .title {
+    width: 300px;
+    height: 80px;
+    background-color: #c8c8c8;
+    margin: auto;
+}
+
+.sec3 .golden {
+    display: flex;
+    width: 1440px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.sec3 .golden > .img {
+    width: 615px;
+    height: 695px;
+    background-color: #c8c8c8;
+}
+
+.sec3 .golden > .text {
+    width: 825px;
+    height: 695px;
+    background-color: #717171;
+}
+
+.sec3 > .chefnote {
+    margin: auto;
+}
+
+.sec3 > .chefnote > div {
+    width: 190px;
+    height: 40px;
+    background-color: #c8c8c8;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.sec3 > .chefnote > p {
+    width: 484px;
+    height: 63px;
+    background-color: #c8c8c8;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.sec4 {
+    margin-top: 300px;
+    width: 1920px;
+    text-align: center;
+    position: relative;
+}
+
+.sec4 > article {
+    width: 1440px;
+    height: 650px;
+    background-color: #c8c8c8;
+    margin: auto;
+    position: relative;
+    padding: 95px 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.sec4 > article > .title {
+    width: 300px;
+    height: 80px;
+    background-color: #717171;
+    margin: auto;
+    position: relative;
+}
+.sec4 > article>.stitle{
+    width: 350px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+    background-color: #717171;
+    position: relative;
+}
+
+.sec4 > article > .membership {
+    width: 1440px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.sec4 > article > .membership > li {
+    width: 456px;
+    height: 210px;
+    position: relative;
+    background-color: #717171;
+    margin: auto;
+    text-align: center;    
+    margin-left: 36px;
+}
+.sec4 > article > .membership > li:first-child{
+    margin-left: 0;
+}
+
+.sec4 > article > .membership >li>div:nth-child(1){
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background-color: #616161;
+}
+.sec4 > article > .membership >li>div:nth-child(2){
+    margin: auto;
+    position: relative;
+    width: 173px; height: 37px;
+    background-color: #616161;
+    margin-top: 40px;
+}
+.sec4 > article > .membership >li>div:nth-child(3){
+    margin: auto;
+    width: 198px; height: 42px;
+    margin-top: 10px;
+    background-color: #616161;
+    position: relative;
+}
+.sec5 {
+    margin: auto;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    width: 1440px;
+    text-align: center;
+    position: relative;
+}
+.sec5 .title {
+    width: 300px;
+    height: 80px;
+    background-color: #c8c8c8;
+    margin: auto;
+}
+.sec5 > article>.stitle{
+    width: 350px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+    background-color: #c8c8c8;
+    position: relative;
+}
+.sec5>article>.cjone{
+    position: relative;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+    width: 1440px;
+    height: 262px;
+}
+.sec5>article>.cjone>.txt{
+    width: 1440px;
+    height: 262px;
+    background-color: #c8c8c8;
+    position: relative;
+}
+.sec5>article>.cjone>.img{
+    width: 424px;
+    height: 262px;
+    position: absolute;
+    background-color: #717171;
+    right: 0;
+}
+.sec5>article>.cjone>.txt>div:first-child{
+    width: 552px; height: 29px;
+    background-color: #717171;
+    margin: auto;
+    margin-top: 47px;
+    position: relative;
+}
+.sec5>article>.cjone>.txt>div:nth-child(2){
+    width: 498px;
+    height:42px;
+    background-color: #717171;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.sec5>article>.cjone>.txt>.btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 498px;
+    height: 35px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.sec5>article>.cjone>.txt>.btn>li{
+    width: 87px; height: 35px;
+    background-color: #717171;
+}
+.sec5>article>.benefit{
+    width: 1440px;
+    height: 236px;
+    margin: auto;
+    position: relative;
+   
+    margin-top: 70px;
+    display: flex;
+    justify-content:space-between;
+}
+.sec5>article>.benefit>li{
+    width: 333px;
+    height: 236px;
+    margin: auto;
+    margin-right: 36px;
+    position: relative;
+     background-color: #c8c8c8;
+}
+.sec5>article>.benefit>li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+   .sec1 {
+    height: 700px;
+}
+          .sec1 > article > .arrow {
+    width: 1920px;
+    padding: 0 180px;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 450px;
+
+}
+
+}
+
+
+@media only screen and (max-width: 780px) {
+   .sec1 {
+    height: 500px;
+}
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .sec1 {
+    height: 337px;
+    padding-top: 37px;
+}
+}
