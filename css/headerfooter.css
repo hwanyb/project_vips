@@ -1,12 +1,74 @@
+* {
+          box-sizing: border-box;
+}
+
+a {
+          display: block;
+}
+
 header {
           width: 100%;
-          height: 100px;
           background-color: #c41230;
-          position: fixed;
-          top: 0;
-          z-index: 9999;
           text-align: center;
-          overflow: hidden;
+          box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+          position: relative;
+}
+
+.header_top {
+          width: 100%;
+          height: 36px;
+          background-color: #c41230;
+          margin: auto;
+          position: sticky;
+          
+          
+}
+
+.header_top_wrap {
+          width: 1440px;
+          height: 36px;
+          margin: auto;
+          border-bottom: 1px solid #fff;
+
+}
+
+.header_top_wrap > ul {
+          float: right;
+          justify-content: flex-end;
+          display: flex;
+}
+
+.header_top_wrap > ul > li {
+          margin: 0 5px;
+          line-height: 36px;
+          color: #949494;
+          font-size: 13px;
+
+}
+
+.header_top_wrap > ul > li > a {
+          color: #949494;
+}
+
+.icon_count {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #999;
+          color: #fff;
+          text-align: center;
+          line-height: 15px;
+}
+
+.header_bottom {
+          position: fixed;
+          width: 1920px;
+          height: 80px;
+          background-color: #c41230;
+          margin: auto;
+          z-index: 9999;
+
 }
 
 .headerwrap {
@@ -15,28 +77,112 @@ header {
           justify-content: space-between;
           position: relative;
           margin: auto;
+          align-items: center;
 }
 
-.headerwrap > h1 {
-          width: 166px;
-          height: 70px;
-          margin-top: 15px;
+.top_nav {
+          width: 600px;
+}
+
+
+.headerwrap > h1 > a > img {
+          width: 120px;
+          height: 50px;
+}
+
+.top_nav .depth1 {
+          display: flex;
+          justify-content: space-between;
+          font-size: 20px;
+}
+
+.top_nav .depth1 > li {
+          display: inline-block;
+          width: 20%;
+          text-align: center;
           position: relative;
-          background-color: #fff;
+}
+
+.top_nav .depth1 > li > a:after {
+          display: block;
+          content: '';
+          border-bottom: solid 4px #fff;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+}
+
+.top_nav .depth1 > li > a:hover:after {
+          transform: scaleX(1);
+}
+
+.top_nav .depth1 > li > a:after {
+          transform-origin: 0% 50%;
+}
+
+.top_nav .depth1 > li > a {
+          display: block;
+          color: #fff;
+          line-height: 100px;
+}
+
+.top_nav .depth2 {
+          padding: 20px 10px;
+          display: none;
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: left;
+          white-space: nowrap;
+          background-color: rgba(33, 33, 33, 0.7);
+          font-size: 15px;
+          font-weight: 300px;
+          line-height: 40px;
+}
+
+.top_nav .depth2 > li > a {
+          color: #fff;
+}
+
+.top_nav .depth1 li:hover .depth2 {
+          display: block;
+}
+
+
+/****
+.headerwrap > h1 > a > img {
+          width: 120px;
+          height: 50px;
 }
 
 .headerwrap > nav > ul {
           display: flex;
+          width: 600px;
+          justify-content: space-between;
           position: relative;
+          background-color: antiquewhite;
+}
+.headerwrap > nav > ul > li>a:hover{
+          border-bottom: 3px solid #fff;
+          box-sizing: border-box;
+}
+.headerwrap > nav > ul > li > a {
+          color: #fff;
+          font-size: 24px;
+          line-height: 100px;
+          background-color: aqua;
+          display: block;
+}
+.headerwrap > nav > ul .depth2{
+          position: absolute;
+          width: 100%;
+          height: 150px;
+          font-size: 20px;
+          background-color:rgba(33,33,33,0.7);
+          
 }
 
-.headerwrap > nav > ul > li {
-          margin-right: 30px;
-          height: 35px;
-          background-color: #fff;
-          margin-top: 35px;
-}
-
+/*********************
 .headerwrap > nav > ul > li:nth-child(1) {
           width: 74px;
 }
@@ -57,42 +203,51 @@ header {
           width: 70px;
           margin-right: 0;
 }
+***************************/
 
-.headerwrap > .user {
+.headerwrap > .right {
+          width: 300px;
+          align-items: center;
           display: flex;
+          justify-content: space-between;
+}
+
+.headerwrap > .right > .user {
+          width: 250px;
+          display: flex;
+          justify-content: space-between;
           position: relative;
-          margin-right: -150px;
+          white-space: nowrap;
+          line-height: 100px;
 }
 
-.headerwrap > .user > li {
-          width: 50px;
-          height: 21px;
-          margin-top: 39px;
-          background-color: #fff;
-          margin-left: 20px;
+.headerwrap > .right > .user > li > a {
+          color: #fff;
+          font-weight: 300;
+          display: block;
+
 }
 
-.headerwrap > .lang {
+.headerwrap > .right > .lang > a {
           width: 36px;
           height: 36px;
-          margin-top: 33px;
           position: relative;
-          background-color: #fff;
+          display: block;
 }
 
 
 .headerwrap > .btn_nav {
-          width: 36px;
-          height: 36px;
-          margin-top: 33px;
+          width: 24px;
           position: relative;
-          background-color: #fff;
           display: none;
+          margin-top: 5px;
 }
 
+.headerwrap > .btn_nav > a {
+          width: 24px;
+}
 
-
-footer {
+***/ footer {
           width: 100%;
           height: 419px;
           background-color: #c8c8c8;
@@ -161,8 +316,10 @@ footer > section {
           justify-content: space-between;
           margin-top: 30px;
 }
-.footerbottom>p{
-          width: 540px; height: 63px;
+
+.footerbottom > p {
+          width: 540px;
+          height: 63px;
           background-color: #717171;
 }
 
@@ -170,24 +327,27 @@ footer > section {
 
 
 
-.quick{
+.quick {
           width: 1440px;
           height: 200px;
           margin: auto;
 }
-.quick>ul{
+
+.quick > ul {
           display: flex;
           position: absolute;
           margin: auto;
           z-index: 888;
 }
-.quick>ul>li{
+
+.quick > ul > li {
           width: 480px;
           height: 200px;
           background-color: #717171;
-          
+
 }
-.quick>ul>li:nth-child(2){
+
+.quick > ul > li:nth-child(2) {
           background-color: #212121;
 }
 
@@ -221,41 +381,69 @@ footer > section {
 
 
 @media only screen and (max-width: 1440px) {
-   .headerwrap {
-          width: 100%;
-             padding: 0 30px;
-             box-sizing: border-box;
-}
-          .headerwrap > .user {
-          margin-right: 0;
-}
-.headerwrap > nav > ul > li {
-          margin-right: 15px;
-}
-          .headerwrap > .user > li {
-          width: 30px;
-          margin-left: 10px;
-}
+          .headerwrap {
+                    width: 100%;
+                    padding: 0 30px;
+          }
+
+          .top_nav {
+                    width: 50%;
+          }
+
+          .headerwrap > nav > ul > li {
+                    margin-right: 15px;
+          }
+
+
           footer > section {
-          width: 100%;
+                    width: 100%;
 
-}
-
-
-@media only screen and (max-width: 950px) {
-          .headerwrap > .user {
-                    display: none;
           }
-          nav{
-                    display: none;
+
+
+          @media only screen and (max-width: 950px) {
+                    header {
+                              height: 50px;
+                    }
+
+                    .headerwrap > h1 > a {
+                              margin-top: 5px;
+                    }
+
+                    .headerwrap > h1 > a > img {
+                              width: auto;
+                              height: 40px;
+                    }
+
+                    .top_nav {
+                              display: none;
+                    }
+
+                    .headerwrap > .right > .user {
+                              display: none;
+                    }
+
+                    .headerwrap > .right {
+                              width: auto;
+                    }
+
+                    .headerwrap > .btn_nav {
+                              display: block;
+                              width: 24px;
+                              height: 24px;
+                    }
+
+                    .headerwrap > .right > .lang > a {
+                              width: 24px;
+                              height: 24px;
+                    }
+
+                    .headerwrap > .right > .lang > a > img {
+                              width: 24px;
+                              height: 24px;
+                    }
           }
-          .btn_nav{
-                    display: inline-block;
-          }
-}
 
 
 
-@media only screen and (max-width: 400px) {
-  
-}
+          @media only screen and (max-width: 400px) {}
