@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+.bigtitle {
+    width: 1920px;
+    height: 648px;
+    background-image: url(../img/brand.png);
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bigtitle > h2 {
+    width: 700px;
+    font-size: 100px;
+    padding-top: 200px;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+}
+
+.bigtitle > p {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.subnav {
+    width: 1920px;
+    height: 87px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.subnav > ul {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+}
+
+.subnav .home {
+    border-right: 1px solid #c41230;
+    width: 87px;
+    height: 87px;
+    padding-top: 33px;
+
+}
+
+.subnav .home > a {
+    display: block;
+}
+
+.subnav .home > a > img {
+    display: block;
+    line-height: 87px;
+    margin: auto;
+
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    outline-style: none;
+    align-items: center;
+    border: none;
+    border-right: 1px solid #c41230;
+    height: 87px;
+    width: 369px;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Hammersmith One';
+    background: url('../img/downarrow.png') no-repeat 95% 50%;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.menu1 > option {
+    font-size: 20px;
+    padding: 20px;
+}
+.naviwrap{
+    width: 615px;
+}
+.navi{
+    float: right;
+    display: flex;
+    text-align: right;
+    line-height: 87px;
+}
+.navi>li{
+    display: flex;
+    margin: 0 10px;
+    text-align: right;
+}
+
+
+
+.cont{
+    width: 1920px;
+    background-image: url(../img/brandback.jpg);
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    padding-top: 180px;
+    background-repeat:repeat;
+}
+.title>h2{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.title>.firsth3{
+    width: 1100px;
+    padding: 5px 20px;
+    background-color: #c41230;
+    font-size: 32px;
+    margin: auto;
+    margin-top: 50px;
+}
+.title>h4{
+    margin-top: 80px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.title>h4>b{
+    font-weight: bold;
+}
+.title>.secondh3{
+    border-bottom: 1px solid #fff;
+    width: 475px;
+    text-align: center;
+    margin: auto;
+    background-color: none;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.art1{
+    width: 1440px;
+    text-align: left;
+    margin: auto;
+    margin-top: 200px;
+}
+.art1>h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.art1>p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+.art2{
+    width: 1440px;
+    text-align: right;
+    margin: auto;
+    margin-top: 200px;
+}
+.art2>h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.art2>p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+.art3{
+    width: 1440px;
+    text-align: left;
+    margin: auto;
+    margin-top: 200px;
+}
+.art3>h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.art3>p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+.bottomh3{
+    font-size: 32px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 200px;
+   padding-bottom:  200px;
+}
