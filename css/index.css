@@ -17,7 +17,6 @@ main > section {
 .sec1 {
     width: 100%;
     height: 944px;
-    background-image: url(../img/sec1bg.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -149,32 +148,42 @@ main > section {
 
 .sec3 {
     margin-top: 300px;
-    width: 1920px;
+    width: 100%;
     text-align: center;
     position: relative;
+
+}
+
+.sec3Bg {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 3200px;
+    overflow: hidden;
 }
 
 .sec3 > .bg1 {
     position: absolute;
     z-index: -99;
-    top: -250px;
-    left: -150px;
+    top: -300px;
+    left: -280px;
 }
 
-.sec3 > .bg2 {
+.sec3Bg > .bg2 {
     position: absolute;
     z-index: -99;
     bottom: -10px;
     right: -100px;
+    overflow: hidden;
 
 }
 
 .sec3 > .bg1 > img {
-    width: 700px;
-    height: 700px;
+    width: 900px;
+    height: 900px;
 }
 
-.sec3 > .bg2 > img {
+.sec3Bg > .bg2 > img {
     width: 400px;
 }
 
@@ -366,12 +375,13 @@ main > section {
     margin-left: 0;
 }
 
-.sec4 > article > .membership > li > div:nth-child(1) {
+.sec4 > article > .membership > li > .img {
     position: relative;
-    margin: auto;
+    margin: 0 auto;
+    width: 80px;
 }
 
-.sec4 > article > .membership > li > div:nth-child(2) {
+.sec4 > article > .membership > li > .txt > div:nth-child(1) {
     margin: auto;
     position: relative;
     margin-top: 40px;
@@ -379,7 +389,7 @@ main > section {
     font-weight: 400;
 }
 
-.sec4 > article > .membership > li > div:nth-child(3) {
+.sec4 > article > .membership > li > .txt > div:nth-child(2) {
     margin: auto;
     margin-top: 10px;
     position: relative;
@@ -601,9 +611,7 @@ main > section {
 
 
 @media only screen and (max-width: 1440px) {
-    main {
-        top: 50px;
-    }
+    main {}
 
     .sec1 {
         width: 100%;
@@ -677,14 +685,13 @@ main > section {
     }
 
     .sec3 > .bg1 {
-        top: -150px;
+        top: -100px;
         left: -150px;
     }
 
-    .sec3 > .bg2 {
-        bottom: -50px;
-        right: -140px;
-
+    .sec3Bg > .bg2 {
+        right: -120px;
+        bottom: 100px;
     }
 
     .sec3 > .bg1 > img {
@@ -692,7 +699,11 @@ main > section {
         height: 500px;
     }
 
-    .sec3 > .bg2 > img {
+    .sec3Bg {
+        top: 3000px;
+    }
+
+    .sec3Bg > .bg2 > img {
         width: 300px;
     }
 
@@ -784,10 +795,23 @@ main > section {
         height: 35px;
 
     }
-    .arrow > div >a>img{
+
+    .arrow > div > a > img {
         width: 20px;
         height: 35px;
 
+    }
+
+    .sec3Bg {
+        top: 2800px;
+    }
+
+    .sec3Bg > .bg2 {
+        right: -90px;
+    }
+
+    .sec3Bg > .bg2 > img {
+        width: 200px;
     }
 
     .sec3 .golden {
@@ -823,6 +847,49 @@ main > section {
         text-align: left;
         font-size: 15px;
     }
+
+    .sec4 > article {
+        height: 800px;
+        margin: auto;
+        position: relative;
+        padding: 95px 0;
+        box-sizing: border-box;
+        text-align: center;
+        background-image: url(../img/sec4bg.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .sec4 > article > .membership {
+        flex-direction: column;
+        margin-top: 90px;
+    }
+
+    .sec4 > article > .membership > li {
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        margin-left: 0;
+        display: flex;
+        padding-right: 0px;
+        text-align: left;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .sec4 > article > .membership > li > .img {
+    margin: 0px;
+}
+    .sec4 > article > .membership > li :last-child{
+        margin-left: -20px;
+    }
+    .sec4 > article > .membership > li > .txt{
+        margin-left: 50px;
+    }
+.sec4 > article > .membership > li > .txt > div:nth-child(1) {
+    margin-top: 0px;
+}
+   
 }
 
 
@@ -834,9 +901,10 @@ main > section {
         height: 500px;
 
     }
-      .arrow {
+
+    .arrow {
         padding: 0px;
-        
+
 
     }
 
@@ -850,11 +918,29 @@ main > section {
         font-size: 15px;
     }
 
+    .sec3 > .bg1 {
+        left: -80px;
+        top: 100px;
+    }
+
+    .sec3 > .bg1 > img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sec3Bg {
+        top: 2300px;
+    }
+
+    .sec3Bg > .bg2 {
+        right: -120px;
+    }
 
     .sec3 .golden > .img {
         height: 300px;
         background-size: cover;
     }
+
 
     .sec3 .golden > .text > .goldenline {
         width: 200px;

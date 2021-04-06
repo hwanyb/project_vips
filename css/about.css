@@ -3,10 +3,11 @@
 }
 
 .bigtitle {
-    width: 1920px;
-    height: 648px;
+    width: 100%;
+    height:500px;
     background-image: url(../img/brand.png);
     background-size: cover;
+          background-position: center;
     margin: auto;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -15,7 +16,7 @@
 .bigtitle > h2 {
     width: 700px;
     font-size: 100px;
-    padding-top: 200px;
+    padding-top: 100px;
     border-bottom: 1px solid #fff;
     margin: auto;
 }
@@ -85,16 +86,19 @@ select {
     font-size: 20px;
     padding: 20px;
 }
-.naviwrap{
+
+.naviwrap {
     width: 615px;
 }
-.navi{
+
+.navi {
     float: right;
     display: flex;
     text-align: right;
     line-height: 87px;
 }
-.navi>li{
+
+.navi > li {
     display: flex;
     margin: 0 10px;
     text-align: right;
@@ -102,36 +106,41 @@ select {
 
 
 
-.cont{
+.cont {
     width: 1920px;
     background-image: url(../img/brandback.jpg);
     background-size: cover;
     margin: auto;
     text-align: center;
     padding-top: 180px;
-    background-repeat:repeat;
+    background-repeat: repeat;
 }
-.title>h2{
+
+.title > h2 {
     font-size: 50px;
     margin-top: 80px;
 }
-.title>.firsth3{
-    width: 1100px;
+
+.title > .firsth3 {
+    width: auto;
     padding: 5px 20px;
     background-color: #c41230;
-    font-size: 32px;
+    font-size: 20px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
-.title>h4{
+
+.title > h4 {
     margin-top: 80px;
     font-size: 24px;
     font-weight: 300;
 }
-.title>h4>b{
+
+.title > h4 > b {
     font-weight: bold;
 }
-.title>.secondh3{
+
+.title > .secondh3 {
     border-bottom: 1px solid #fff;
     width: 475px;
     text-align: center;
@@ -141,56 +150,171 @@ select {
     font-weight: bold;
     margin-top: 50px;
 }
-.art1{
+
+.art1 {
     width: 1440px;
     text-align: left;
     margin: auto;
     margin-top: 200px;
 }
-.art1>h3{
+
+.art1 > h3 {
     font-size: 24px;
     font-weight: bold;
 }
-.art1>p{
+
+.art1 > p {
     font-size: 20px;
     font-weight: 300;
     margin-top: 50px;
 }
-.art2{
+
+.art2 {
     width: 1440px;
     text-align: right;
     margin: auto;
     margin-top: 200px;
 }
-.art2>h3{
+
+.art2 > h3 {
     font-size: 24px;
     font-weight: bold;
 }
-.art2>p{
+
+.art2 > p {
     font-size: 20px;
     font-weight: 300;
     margin-top: 50px;
 }
-.art3{
+
+.art3 {
     width: 1440px;
     text-align: left;
     margin: auto;
     margin-top: 200px;
 }
-.art3>h3{
+
+.art3 > h3 {
     font-size: 24px;
     font-weight: bold;
 }
-.art3>p{
+
+.art3 > p {
     font-size: 20px;
     font-weight: 300;
     margin-top: 50px;
 }
-.bottomh3{
+
+.bottomh3 {
     font-size: 32px;
     margin: auto;
     text-align: center;
     font-weight: bold;
     margin-top: 200px;
-   padding-bottom:  200px;
+    padding-bottom: 200px;
+}
+
+
+
+
+@media only screen and (max-width: 1440px) {
+    .subnav {
+        width: 100%;
+    }
+
+    .subnav > ul {
+        width: 100%;
+    }
+
+    .naviwrap {
+        display: none;
+    }
+
+    .subnav .home {
+        display: none;
+
+    }
+
+    select {
+        width: 100%;
+
+    }
+
+    .cont {
+        width: 100%;
+    }
+    .title{
+        width: 90%;
+    }
+
+    .title > .firsth3 {
+        width: 90%;
+    }
+    .title > .secondh3 {
+    width: 90%;
+}
+
+    .art1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .art2 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .art3 {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .bigtitle > h2 {
+        width: 100%;
+        font-size: 50px;
+        border-bottom: 1px solid #fff;
+        margin: 0 30px auto;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .title>div>img{
+        width:  350px;
+    }
+    .title > h2 {
+    font-size: 32px;
+}
+    .title > .firsth3 {
+        font-size: 24px;
+}
+    
+    .title > h4 {
+    font-size: 20px;
+}
+
+
+.title > .secondh3 {
+    font-size: 24px;
+}
+
+    .art1 > h3 {
+    font-size: 20px;
+    }
+    .art1 > p {
+    font-size: 15px;
+    }
+    .art2 > h3 {
+    font-size: 20px;
+    }
+    .art2 > p {
+    font-size: 15px;
+    }
+    .art3 > h3 {
+    font-size: 20px;
+    }
+    .art3 > p {
+    font-size: 15px;
+    }
 }
