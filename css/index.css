@@ -17,13 +17,20 @@ main > section {
 .sec1 {
     width: 100%;
     height: 944px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*
+.sec1 slide1{
+    width: 100%;
+    height: 944px;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    position: relative;
-    padding-top: 150px;
-    box-sizing: border-box;
+    background-image: url(../img/sec1bg.png);
 }
+*/
 
 .sec1 > article > .arrow {
     width: 100%;
@@ -43,22 +50,23 @@ main > section {
 
 }
 
-.sec1 > article > .title {
+.sec1 .title {
     margin: auto;
     width: 800px;
-    font-size: 100px;
+    font-size: 80px;
     position: relative;
     color: #fff;
     border-bottom: 1px solid #fff;
     text-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+    padding-top: 150px;
 }
 
-.sec1 > article > .stitle {
+.sec1 .stitle {
     margin: auto;
     margin-top: 40px;
     position: relative;
     text-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     font-weight: 300;
 }
@@ -94,8 +102,11 @@ main > section {
     height: 24px;
     background-image: url(../img/btnplus.png);
     margin-left: 20px;
+    cursor: pointer;
 }
-
+.sec2 .title:hover:after{
+    opacity: 0.5;
+}
 .sec2 .eventimg > a {
     width: 1440px;
     margin: auto;
@@ -166,16 +177,17 @@ main > section {
     position: absolute;
     z-index: -99;
     top: -300px;
-    left: -280px;
+    left: -500px;
+    opacity: 0;
 }
 
 .sec3Bg > .bg2 {
     position: absolute;
     z-index: -99;
     bottom: -10px;
-    right: -100px;
+    right: -500px;
     overflow: hidden;
-
+opacity: 0;
 }
 
 .sec3 > .bg1 > img {
@@ -211,6 +223,10 @@ main > section {
     height: 24px;
     background-image: url(../img/btnplus.png);
     margin-left: 20px;
+    cursor: pointer;
+}
+.sec3 .title:hover:after {
+    opacity: 0.5;
 }
 
 .sec3 .golden {
@@ -225,10 +241,19 @@ main > section {
 .sec3 .golden > .img {
     width: 615px;
     height: 695px;
+    overflow: hidden;
+    /*
     background-image: url(../img/menu_2020113015117737.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -50px;
+*/
+}
+
+.sec3 .golden > .img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .sec3 .golden > .text {
@@ -299,7 +324,7 @@ main > section {
 
 .sec4 {
     margin-top: 300px;
-    width: 1920px;
+    width: 100%;
     text-align: center;
     position: relative;
 }
@@ -341,11 +366,12 @@ main > section {
     height: 24px;
     background-image: url(../img/btnplus.png);
     margin-left: 20px;
+    cursor: pointer;
 }
-
+.sec4 .title:hover:after {
+    opacity: 0.5;
+}
 .sec4 > article > .stitle {
-    width: 350px;
-    height: 30px;
     margin: auto;
     margin-top: 5px;
     position: relative;
@@ -371,8 +397,8 @@ main > section {
     margin-left: 36px;
 }
 
-.sec4 > article > .membership > li:first-child {
-    margin-left: 0;
+.sec4 > article > .membership > li:last-child {
+    margin-left: -20px;
 }
 
 .sec4 > article > .membership > li > .img {
@@ -421,7 +447,9 @@ main > section {
     margin: auto;
     margin-bottom: 30px;
 }
-
+.sec5 .title:hover:after {
+    opacity: 0.5;
+}
 .sec5 .title:after {
     content: '';
     display: inline-block;
@@ -429,11 +457,10 @@ main > section {
     height: 24px;
     background-image: url(../img/btnplus.png);
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .sec5 > article > .stitle {
-    width: 350px;
-    height: 30px;
     margin: auto;
     margin-top: 5px;
     position: relative;
@@ -447,8 +474,8 @@ main > section {
     display: flex;
     margin-top: 100px;
     width: 1440px;
-    height: 262px;
     border: 1px solid #c41230;
+    padding: 50px;
 }
 
 .sec5 > article > .cjone > .txt {
@@ -458,14 +485,13 @@ main > section {
 
 .sec5 > article > .cjone > .img {
     width: 424px;
-    height: 262px;
     position: absolute;
     right: 0;
+    bottom: 0;
 }
 
 .sec5 > article > .cjone > .txt > div:first-child {
     margin: auto;
-    margin-top: 47px;
     position: relative;
     font-size: 20px;
     font-weight: bold;
@@ -484,7 +510,6 @@ main > section {
     display: flex;
     justify-content: space-between;
     width: 333px;
-    height: 35px;
     margin: auto;
     margin-top: 30px;
 }
@@ -497,14 +522,18 @@ main > section {
     text-align: center;
     font-weight: 300;
 }
-
+.sec5 > article > .cjone > .txt > .btn > li:hover{
+    background-color: rgba(196, 18, 48, 0.54);
+}
+.sec5 > article > .cjone > .txt > .btn > li:active{
+    background-color: rgba(196, 18, 48, 0.54);
+}
 .sec5 > article > .cjone > .txt > .btn > li > a {
     display: block;
 }
 
 .sec5 > article > .benefit {
     width: 1440px;
-    height: 236px;
     margin: auto;
     position: relative;
     margin-top: 70px;
@@ -513,16 +542,10 @@ main > section {
 }
 
 .sec5 > article > .benefit > li {
-    width: 333px;
-    height: 236px;
     margin: auto;
-
     position: relative;
 }
 
-.sec5 > article > .benefit > li:last-child {
-    margin-right: 0;
-}
 
 .sec5 > article > .benefit > li > h3 {
     font-size: 20px;
@@ -551,7 +574,12 @@ main > section {
     justify-content: space-between;
     margin-top: 40px;
 }
-
+.sec5 > article > .benefit  .btn>div:hover{
+        background-color: rgba(196, 18, 48, 0.54);
+}
+.sec5 > article > .benefit  .btn>div:active{
+        background-color: rgba(196, 18, 48, 0.54);
+}
 .sec5 > article > .benefit > li > .btn > div {
     width: 123px;
     background-color: #c41230;
@@ -570,6 +598,13 @@ main > section {
 .sec5 > article > .benefit > li > .btn87 > div {
     width: 87px;
     background-color: #c41230;
+}
+.sec5 > article > .benefit > li > .btn87 > div:hover{
+    background-color: rgba(196, 18, 48, 0.54);
+}
+
+.sec5 > article > .benefit > li > .btn87 > div:active{
+    background-color: rgba(196, 18, 48, 0.54);
 }
 
 .sec5 > article > .benefit > li > .btn219 {
@@ -591,7 +626,13 @@ main > section {
     width: 219px;
     background-color: #c41230;
 }
+.sec5 > article > .benefit > li > .btn219 > div:hover{
+    background-color: rgba(196, 18, 48, 0.54);
+}
 
+.sec5 > article > .benefit > li > .btn219 > div:active{
+    background-color: rgba(196, 18, 48, 0.54);
+}
 
 
 #btn87 > div {
@@ -623,6 +664,8 @@ main > section {
 
     }
 
+
+
     .sec2 .eventimg > a {
         width: 100%;
         padding: 0 30px;
@@ -639,26 +682,29 @@ main > section {
 
     .sec3 .golden {
         width: 100%;
-        padding: 0 30px;
-        height: 500px;
+        height: 600px;
 
     }
 
     .sec3 .golden > .img {
         width: 50%;
-        height: 550px;
-        background-position: bottom;
+        height: 600px;
+        line-height: 600px;
+    }
+
+    .sec3 .golden > .img > img {
+        width: 100%;
+        vertical-align: middle;
     }
 
     .sec3 .golden > .text {
-        height: 550px;
         width: 50%;
-        margin: 5% 0;
     }
 
     .sec3 .golden > .text > .goldenline {
         width: 300px;
-        margin-top: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .sec3 .golden > .text > .goldenline > img {
@@ -737,7 +783,6 @@ main > section {
 
     .sec5 > article > .cjone > .img {
         z-index: -9;
-
     }
 
     .sec5 > article > .cjone > .txt {
@@ -749,7 +794,6 @@ main > section {
     .sec5 > article > .cjone > .txt > .btn {
         justify-content: space-between;
         width: 333px;
-        height: 35px;
         float: left;
         margin-top: 30px;
     }
@@ -766,12 +810,10 @@ main > section {
     }
 
     .sec5 > article > .benefit > li {
-        width: 333px;
-        height: 236px;
+        width: 50%;
         margin: auto;
-        margin-right: 36px;
-        margin-top: 50px;
-        position: relative;
+        margin-right: 0;
+        margin-bottom: 100px;
     }
 }
 
@@ -781,13 +823,15 @@ main > section {
         height: 700px;
     }
 
-    .sec1 > article > .title {
+    .sec1 .title {
+        margin-top: -80px;
         font-size: 50px;
-        width: 400px;
+        width: 80%;
     }
 
-    .sec1 > article > .stitle {
+    .sec1 .stitle {
         font-size: 15px;
+        width: 80%;
     }
 
     .arrow > div {
@@ -821,16 +865,27 @@ main > section {
 
     .sec3 .golden > .img {
         width: 100%;
-        background-size: cover;
+        height: 500px;
+        line-height: 500px;
     }
+
+    .sec3 .golden > .img > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+
+    }
+
 
     .sec3 .golden > .text {
         width: 100%;
+        margin-top: 50px;
     }
 
     .sec3 > .chefnote {
-        width: 100%;
-        margin: 30px;
+        width: 70%;
+        margin: 30px auto;
     }
 
     .sec3 > .chefnote > h2 {
@@ -877,27 +932,69 @@ main > section {
         justify-content: center;
         margin-bottom: 50px;
     }
+
     .sec4 > article > .membership > li > .img {
-    margin: 0px;
-}
-    .sec4 > article > .membership > li :last-child{
+        margin: 0px;
+    }
+
+    .sec4 > article > .membership > li :last-child {
         margin-left: -20px;
     }
-    .sec4 > article > .membership > li > .txt{
-        margin-left: 50px;
+
+    .sec4 > article > .membership > li > .txt {
+        margin-left: 10px;
     }
-.sec4 > article > .membership > li > .txt > div:nth-child(1) {
-    margin-top: 0px;
-}
-   
+
+    .sec4 > article > .membership > li > .txt > div:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    .sec5 > article > .cjone {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    .sec5 > article > .cjone > .img {
+        position: relative;
+        margin: auto;
+        width: 60%;
+    }
+
+    .sec5 > article > .cjone > .img > img {
+        width: 100%;
+    }
+
+    .sec5 > article > .cjone > .txt {
+        text-align: center;
+    }
+
+    .sec5 > article > .cjone > .txt > .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sec5 > article > .cjone > .txt > .btn > li {
+        margin-left: 20px;
+
+    }
+
+    .sec5 > article > .cjone > .txt > .btn > li:first-child {
+        margin-left: 0;
+
+    }
+
+    .sec5 > article > .benefit > li {
+        width: 100%;
+        margin: auto;
+        margin-right: 0;
+        margin-bottom: 100px;
+    }
 }
 
 
 
 @media only screen and (max-width: 400px) {
     .sec1 {
-        padding: 0 30px;
-        padding-top: 100px;
         height: 500px;
 
     }
@@ -908,14 +1005,16 @@ main > section {
 
     }
 
-    .sec1 > article > .title {
+    .sec1 .title {
         font-size: 32px;
-        width: 100%;
+        width: 80%;
+        margin-top: -80px;
 
     }
 
-    .sec1 > article > .stitle {
+    .sec1 .stitle {
         font-size: 15px;
+        width: 80%;
     }
 
     .sec3 > .bg1 {
@@ -929,17 +1028,13 @@ main > section {
     }
 
     .sec3Bg {
-        top: 2300px;
+        top: 2500px;
     }
 
     .sec3Bg > .bg2 {
         right: -120px;
     }
 
-    .sec3 .golden > .img {
-        height: 300px;
-        background-size: cover;
-    }
 
 
     .sec3 .golden > .text > .goldenline {
@@ -949,5 +1044,67 @@ main > section {
 
     .sec3 .golden > .text > .goldenline > img {
         width: 200px;
+    }
+
+    .sec4 > article {
+        height: 1000px;
+    }
+
+    .sec4 > article > .membership > li {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .sec4 > article > .membership > li > .img {
+        margin: auto;
+    }
+
+    .sec4 > article > .membership > li > .img > img {
+        margin: auto;
+    }
+
+    .sec4 > article > .membership > li > .txt {
+        margin: auto;
+        text-align: center;
+    }
+
+    .sec4 > article > .membership > li:last-child {
+        margin-left: 0px;
+    }
+
+    .sec5 {
+        margin-bottom: 150px;
+    }
+
+    .sec5 > article > .cjone > .img {
+        margin: 20px auto;
+    }
+
+    .sec5 > article > .cjone > .txt > .btn {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .sec5 > article > .cjone > .txt > .btn > li {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .sec5 > article > .cjone > .txt > .btn > li:first-child {
+        margin-left: 20px;
+    }
+
+    .sec5 > article > .benefit > li > h3 {
+        font-size: 15px;
+    }
+
+    .sec5 > article > .benefit > li > h2 {
+        font-size: 20px;
+    }
+
+    .sec5 > article > .benefit > li > p {
+        font-size: 15px;
     }
 }

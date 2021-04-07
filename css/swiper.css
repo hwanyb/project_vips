@@ -1,0 +1,83 @@
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .sec1 .swiper-container {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .sec1 .swiper-slide {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .sec1 .swiper-slide:first-child {
+        background-image: url(../img/sec1bg.png);
+    }
+
+    .sec1 .swiper-slide:nth-child(2) {
+        background-image: url(../img/vipsprm_outside_2.jpg);
+    }
+
+    .sec1 .swiper-slide:nth-child(3) {
+        background-image: url(../img/sec1bg3.jpg);
+    }
+
+
+
+    .sec2 .swiper-container {
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .sec2 .swiper-wrapper {
+        width: 1440px;
+        height: 662px;
+    }
+
+    .sec2 .swiper-slide {
+        width: 1440px;
+    }
+
+    .sec2 .swiper-slide > img {
+        width: 1440px;
+    }
+
+    /*
+.sec2 .swiper-slide>img{
+    width: 1440px;
+}
+*/
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+
+
+
+
+
+    @media only screen and (max-width: 1440px) {
+         .sec2 .swiper-slide > img {
+        width: 100%;
+             height: 100%;
+    }
+
+    }

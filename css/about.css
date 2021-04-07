@@ -29,7 +29,7 @@
 
 .subnav {
     width: 1920px;
-    height: 87px;
+    height: 60px;
     background-color: #fff;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -43,9 +43,9 @@
 
 .subnav .home {
     border-right: 1px solid #c41230;
-    width: 87px;
-    height: 87px;
-    padding-top: 33px;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
 
 }
 
@@ -55,7 +55,7 @@
 
 .subnav .home > a > img {
     display: block;
-    line-height: 87px;
+    line-height: 60px;
     margin: auto;
 
 }
@@ -64,12 +64,12 @@ select::-ms-expand {
     display: none;
 }
 
-select {
-    outline-style: none;
+.menu1 {
+    text-align: left;
     align-items: center;
     border: none;
     border-right: 1px solid #c41230;
-    height: 87px;
+    height: 60px;
     width: 369px;
     font-size: 20px;
     padding: 20px;
@@ -82,7 +82,7 @@ select {
 
 }
 
-.menu1 > option {
+.menu1 > opt {
     font-size: 20px;
     padding: 20px;
 }
@@ -95,7 +95,7 @@ select {
     float: right;
     display: flex;
     text-align: right;
-    line-height: 87px;
+    line-height: 60px;
 }
 
 .navi > li {
@@ -115,6 +115,9 @@ select {
     padding-top: 180px;
     background-repeat: repeat;
 }
+.cont>.title>div>img{
+    width: 300px;
+}
 
 .title > h2 {
     font-size: 50px;
@@ -122,17 +125,18 @@ select {
 }
 
 .title > .firsth3 {
-    width: auto;
+    width: 500px;
     padding: 5px 20px;
-    background-color: #c41230;
-    font-size: 20px;
+    background-color: rgba(196, 18, 48, 0.5);
+    font-size: 15px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-family: 'Noto Sans KR';
 }
 
 .title > h4 {
     margin-top: 80px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -146,7 +150,7 @@ select {
     text-align: center;
     margin: auto;
     background-color: none;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 50px;
 }
@@ -164,7 +168,8 @@ select {
 }
 
 .art1 > p {
-    font-size: 20px;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
     font-weight: 300;
     margin-top: 50px;
 }
@@ -177,12 +182,13 @@ select {
 }
 
 .art2 > h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .art2 > p {
-    font-size: 20px;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
     font-weight: 300;
     margin-top: 50px;
 }
@@ -195,18 +201,19 @@ select {
 }
 
 .art3 > h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .art3 > p {
-    font-size: 20px;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
     font-weight: 300;
     margin-top: 50px;
 }
 
 .bottomh3 {
-    font-size: 32px;
+    font-size: 24px;
     margin: auto;
     text-align: center;
     font-weight: bold;
@@ -235,16 +242,15 @@ select {
 
     }
 
-    select {
-        width: 100%;
-
-    }
+   
 
     .cont {
         width: 100%;
+        margin: auto;
     }
     .title{
         width: 90%;
+        margin: auto;
     }
 
     .title > .firsth3 {
@@ -271,6 +277,11 @@ select {
 }
 
 @media only screen and (max-width: 780px) {
+    
+    select {
+    width: 100%;
+
+}
     .bigtitle > h2 {
         width: 100%;
         font-size: 50px;
@@ -281,10 +292,11 @@ select {
 
 @media only screen and (max-width:400px) {
     .title>div>img{
-        width:  350px;
+        width: 200px;
     }
+/*
     .title > h2 {
-    font-size: 32px;
+    font-size: 24px;
 }
     .title > .firsth3 {
         font-size: 24px;
@@ -302,19 +314,14 @@ select {
     .art1 > h3 {
     font-size: 20px;
     }
-    .art1 > p {
-    font-size: 15px;
-    }
+
     .art2 > h3 {
     font-size: 20px;
     }
-    .art2 > p {
-    font-size: 15px;
-    }
+
     .art3 > h3 {
     font-size: 20px;
     }
-    .art3 > p {
-    font-size: 15px;
-    }
+*/
+
 }
