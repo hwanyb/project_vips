@@ -2,12 +2,15 @@
     box-sizing: border-box;
 }
 
+
+
+
 .bigtitle {
     width: 100%;
-    height:500px;
+    height: 500px;
     background-image: url(../img/brand.png);
     background-size: cover;
-          background-position: center;
+    background-position: center;
     margin: auto;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -19,12 +22,18 @@
     padding-top: 100px;
     border-bottom: 1px solid #fff;
     margin: auto;
+    position: relative;
+    left: -900px;
+    opacity: 0;
 }
 
 .bigtitle > p {
     margin-top: 40px;
     font-size: 24px;
     font-weight: 300;
+    position: relative;
+    right: -900px;
+    opacity: 0;
 }
 
 .subnav {
@@ -33,6 +42,8 @@
     background-color: #fff;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 9;
 }
 
 .subnav > ul {
@@ -60,31 +71,129 @@
 
 }
 
-select::-ms-expand {
-    display: none;
+
+.menu1_main {
+    width: 369px;
+    height: 60px;
+    text-align: left;
+    border-right: 1px solid #c41230;
+    cursor: pointer;
+}
+
+.menu1_main > h3 {
+    font-size: 20px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+.menu1_main > h3::after {
+    content: '';
+    width: 15px;
+    height: 9px;
+    display: inline-block;
+    background-image: url('../img/downarrow.png');
+    background-repeat: no-repeat;
+    margin-left: 250px;
 }
 
 .menu1 {
-    text-align: left;
-    align-items: center;
-    border: none;
-    border-right: 1px solid #c41230;
-    height: 60px;
+    display: none;
     width: 369px;
+    text-align: left;
     font-size: 20px;
-    padding: 20px;
-    font-family: 'Hammersmith One';
-    background: url('../img/downarrow.png') no-repeat 95% 50%;
-    border-radius: 0px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
+    background-color: #fff;
 }
 
-.menu1 > opt {
+.menu1 > li {
+    padding: 5px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.menu1 > li:hover {
+    background-color: #c41230;
+    color: #fff;
+}
+
+.menu1_main:hover:after {
+    transform: scaleX(1);
+}
+
+.menu1_main:after {
+    display: block;
+    content: '';
+    border-bottom: solid 5px #c41230;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-top: -5px;
+}
+
+.menu1_main:after {
+    transform-origin: 0% 50%;
+}
+
+
+
+
+
+.menu2_main {
+    width: 369px;
+    height: 60px;
+    text-align: left;
+    border-right: 1px solid #c41230;
+    cursor: pointer;
+}
+
+.menu2_main:hover:after {
+    transform: scaleX(1);
+}
+
+.menu2_main:after {
+    display: block;
+    content: '';
+    border-bottom: solid 5px #c41230;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-top: -5px;
+}
+
+.menu2_main:after {
+    transform-origin: 0% 50%;
+}
+
+.menu2_main > h3 {
     font-size: 20px;
-    padding: 20px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+.menu2_main > h3::after {
+    content: '';
+    width: 15px;
+    height: 9px;
+    display: inline-block;
+    background-image: url('../img/downarrow.png');
+    background-repeat: no-repeat;
+    margin-left: 200px;
+}
+
+.menu2 {
+    display: none;
+    width: 369px;
+    text-align: left;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.menu2 > li {
+    padding: 5px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.menu2 > li:hover {
+    background-color: #c41230;
+    color: #fff;
 }
 
 .naviwrap {
@@ -106,7 +215,7 @@ select::-ms-expand {
 
 
 
-.cont {
+main > .cont {
     width: 1920px;
     background-image: url(../img/brandback.jpg);
     background-size: cover;
@@ -115,13 +224,23 @@ select::-ms-expand {
     padding-top: 180px;
     background-repeat: repeat;
 }
-.cont>.title>div>img{
+
+.titleimg {
+    position: relative;
+    left: -500px;
+    opacity: 0;
+}
+
+.title > div > img {
     width: 300px;
 }
 
 .title > h2 {
-    font-size: 50px;
-    margin-top: 80px;
+    position: relative;
+    left: -500px;
+    opacity: 0;
+    font-size: 32px;
+    margin-top: 60px;
 }
 
 .title > .firsth3 {
@@ -132,12 +251,18 @@ select::-ms-expand {
     margin: auto;
     margin-top: 10px;
     font-family: 'Noto Sans KR';
+    position: relative;
+    opacity: 0;
+    left: -600px;
 }
 
 .title > h4 {
     margin-top: 80px;
     font-size: 20px;
     font-weight: 300;
+    position: relative;
+    opacity: 0;
+    left: -600px;
 }
 
 .title > h4 > b {
@@ -153,6 +278,9 @@ select::-ms-expand {
     font-size: 24px;
     font-weight: bold;
     margin-top: 50px;
+    position: relative;
+    opacity: 0;
+    left: -800px;
 }
 
 .art1 {
@@ -165,6 +293,9 @@ select::-ms-expand {
 .art1 > h3 {
     font-size: 24px;
     font-weight: bold;
+    position: relative;
+    opacity: 0;
+    left: -500px;
 }
 
 .art1 > p {
@@ -172,6 +303,9 @@ select::-ms-expand {
     font-size: 15px;
     font-weight: 300;
     margin-top: 50px;
+    position: relative;
+    opacity: 0;
+    left: -600px;
 }
 
 .art2 {
@@ -184,6 +318,9 @@ select::-ms-expand {
 .art2 > h3 {
     font-size: 20px;
     font-weight: bold;
+    position: relative;
+    opacity: 0;
+    right: -600px;
 }
 
 .art2 > p {
@@ -191,6 +328,9 @@ select::-ms-expand {
     font-size: 15px;
     font-weight: 300;
     margin-top: 50px;
+    position: relative;
+    opacity: 0;
+    right: -600px;
 }
 
 .art3 {
@@ -203,6 +343,9 @@ select::-ms-expand {
 .art3 > h3 {
     font-size: 20px;
     font-weight: bold;
+    position: relative;
+    opacity: 0;
+    left: -600px;
 }
 
 .art3 > p {
@@ -210,6 +353,9 @@ select::-ms-expand {
     font-size: 15px;
     font-weight: 300;
     margin-top: 50px;
+    position: relative;
+    opacity: 0;
+    left: -800px;
 }
 
 .bottomh3 {
@@ -218,9 +364,14 @@ select::-ms-expand {
     text-align: center;
     font-weight: bold;
     margin-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
+    position: relative;
+    opacity: 0;
+    left: -200px;
 }
-
+.quick{
+    bottom: 300px;
+}
 
 
 
@@ -242,23 +393,34 @@ select::-ms-expand {
 
     }
 
-   
 
-    .cont {
+
+
+    main > .cont {
         width: 100%;
         margin: auto;
     }
-    .title{
+
+    .title {
         width: 90%;
         margin: auto;
+    }
+
+    .bigtitle {
+        width: 100%;
+    }
+
+    .bigtitle > h2 {
+        width: 90%;
     }
 
     .title > .firsth3 {
         width: 90%;
     }
+
     .title > .secondh3 {
-    width: 90%;
-}
+        width: 90%;
+    }
 
     .art1 {
         width: 90%;
@@ -274,27 +436,98 @@ select::-ms-expand {
         width: 90%;
         text-align: center;
     }
+    .bottomh3{
+        width: 90%;
+    }
 }
-
+@media only screen and (max-width: 1200px) {
+    .quick{
+        bottom: 360px;
+    }
+}
 @media only screen and (max-width: 780px) {
-    
-    select {
-    width: 100%;
 
-}
-    .bigtitle > h2 {
+    .menu1_main {
+        width: 50%
+    }
+
+    .menu2_main {
+        width: 50%
+    }
+
+    .menu1_main > h3::after {
+        position: absolute;
+        top: 25px;
+        right: 55%;
+    }
+
+    .menu2_main > h3::after {
+        position: absolute;
+        top: 25px;
+        right: 5%;
+    }
+
+    .menu1 {
         width: 100%;
+    }
+
+
+
+    .bigtitle {
+        height: 300px;
+    }
+
+    .bigtitle > h2 {
         font-size: 50px;
-        border-bottom: 1px solid #fff;
-        margin: 0 30px auto;
+        padding-top: 50px;
+    }
+
+    .bigtitle > p {
+        font-size: 15px;
+    }
+
+
+
+    main > .cont > .title > div > img {
+        width: 200px;
+    }
+
+    .title > h4 {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .art1 > h3 {
+        font-size: 20px;
+    }
+
+    .art2 > h3 {
+        font-size: 20px;
+    }
+
+    .art3 > h3 {
+        font-size: 20px;
+    }
+
+    .bottomh3 {
+        font-size: 20px;
+        padding-bottom: 600px;
+    }
+    footer{
+        padding-top: 300px;
+    }
+    .quick{
+        bottom: 1050px;
     }
 }
 
 @media only screen and (max-width:400px) {
-    .title>div>img{
-        width: 200px;
+
+.quick{
+        bottom: 900px;
     }
-/*
+}
+    /*
     .title > h2 {
     font-size: 24px;
 }

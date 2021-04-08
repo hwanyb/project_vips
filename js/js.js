@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $(".start").delay(1000).fadeOut(500);
     $(".btn_nav").on("click", function(){
         $(".mobile_nav").animate({
             left : "0px"
@@ -22,15 +23,14 @@ $(document).ready(function(){
             top : "0px"
         });
     })
-    $(".bg1").delay(4000).animate({
-        left : "-280px",
-        opacity : "1"
-    },2000);
-    $(".bg2").delay(4200).animate({
-        right : "-100px",
-        opacity : "1"
-    },2000
-                                  
+    
+    
+    $(".menu1_main").on("click", function(){
+        $(".menu1").toggle("fast");
+    });
+   $(".menu2_main").on("click", function(){
+        $(".menu2").toggle("fast");
+    });                               
                                   
                                   
     

@@ -13,3 +13,20 @@
 .white{
     color: #fff;
 }
+.start {
+    width: 100%;
+    height: 100vh;
+    background-color: #212121;
+    position: absolute;
+    z-index: 999999;
+    text-align: center;
+}
+.start>div{
+    width: 100%;
+    margin: auto;
+    line-height: 100vh;
+}
+.start>div>img{
+    vertical-align: middle;
+    width: 300px;
+}

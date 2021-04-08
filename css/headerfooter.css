@@ -234,6 +234,7 @@ footer {
     text-align: center;
     box-sizing: border-box;
     padding-top: 175px;
+    position: relative;
 }
 
 footer > section {
@@ -266,6 +267,7 @@ footer > section {
 .footertop > div > .top {
     display: flex;
     justify-content: flex-end;
+    
 }
 
 .footertop > div > .top > li {
@@ -288,6 +290,7 @@ footer > section {
     margin-top: 14px;
     display: flex;
     font-weight: 300;
+    flex-wrap: wrap;
 }
 
 .footertop > div > .bottom > li {
@@ -325,12 +328,13 @@ footer > section {
     width: 1440px;
     height: 200px;
     margin: auto;
-    margin-bottom: -80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .quick > ul {
     display: flex;
-    position: absolute;
     margin: auto;
     z-index: 888;
 }
@@ -430,7 +434,6 @@ footer > section {
     }
 
     .quick > ul {
-        position: relative;
     }
 
     .quick > ul > li {
@@ -510,10 +513,7 @@ footer > section {
         text-align: center;
         margin-bottom: 50px;
     }
-
-    .quick {
-        margin-bottom: 300px;
-    }
+    
 
     .quick > ul {
         flex-direction: column;
@@ -576,9 +576,7 @@ footer > section {
         font-size: 12px;
     }
 
-    .quick {
-        margin-bottom: 150px;
-    }
+    
 
     .quick > ul > li {
         width: 100%;
