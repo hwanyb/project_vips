@@ -19,6 +19,7 @@ main > section {
     height: 944px;
     position: relative;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /*
@@ -79,6 +80,7 @@ main > section {
     margin-top: 300px;
     text-align: center;
     position: relative;
+    overflow: hidden;
 
 }
 .sec2 .title{
@@ -172,6 +174,7 @@ main > section {
     width: 100%;
     text-align: center;
     position: relative;
+    overflow: hidden;
 
 }
 .sec3 .title{
@@ -582,7 +585,7 @@ opacity: 0;
 
 
 .sec5 > article > .benefit > li > h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -594,8 +597,13 @@ opacity: 0;
 }
 
 .sec5 > article > .benefit > li > p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
+    margin-bottom: 50px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .sec5 > article > .benefit > li > .btn {
@@ -1152,7 +1160,7 @@ opacity: 0;
     }
 
     .sec5 > article > .benefit > li > p {
-        font-size: 15px;
+        font-size: 12px;
     }
     
     
